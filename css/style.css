@@ -834,7 +834,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-block-image {
-  background: #ffffff;
+  background: #000;
   margin-bottom: 30px;
 }
 
@@ -843,7 +843,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-block-image .text {
-  padding: 20px;
+  text-align: center;
 }
 
 .probootstrap-block-image .text .date {
@@ -860,7 +860,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-block-image .text h3 a {
-  color: #000000;
+  color: #fff;
 }
 
 .probootstrap-block-image .text h3 a:hover {
