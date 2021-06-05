@@ -24,7 +24,7 @@
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body onLoad="vidLoad();">
     
     <!-- Fixed navbar -->
     
@@ -213,8 +213,8 @@
                 <h3><a>What our Team thinks?</a></h3>
               </div>
               <figure>
-                <figure><iframe class="col-lg-12" width="100%" height="360" style="padding-left: 0px; padding-right: 0px;"
-                  src="https://youtube.com/embed/q8ZYuIGxuus?controls=0"></iframe>
+                <figure><iframe class="col-lg-12" id="vid1" width="100%" height="360" style="padding-left: 0px; padding-right: 0px;"
+                  ></iframe>
               </figure>
             </div>
           </div>
@@ -224,8 +224,8 @@
                 <span class="date"></span>
                 <h3><a>What our Customer thinks?</a></h3>
               </div>
-              <figure><iframe class="col-lg-12" width="100%"  height="360" style="padding-left: 0px; padding-right: 0px;"
-                src="https://youtube.com/embed/sROKyFnYdFA?controls=0"></iframe>
+              <figure><iframe class="col-lg-12" id="vid2" width="100%"  height="360" style="padding-left: 0px; padding-right: 0px;"
+                ></iframe>
               </figure>
             </div>
           </div>
@@ -235,8 +235,8 @@
                 <span class="date"></span>
                 <h3><a >What We do?</a></h3>
               </div>
-              <figure><iframe class="col-lg-12" width="100%" height="360" style="padding-left: 0px; padding-right: 0px;"
-                src="https://youtube.com/embed/31uWBY9z3Rc?controls=0"></iframe>
+              <figure><iframe class="col-lg-12" id="vid3" width="100%" height="360" style="padding-left: 0px; padding-right: 0px;"
+                ></iframe>
               </figure>
             </div>
           </div>
@@ -352,6 +352,15 @@
 
     <script src="js/scripts.min.js"></script>
     <script src="js/custom.min.js"></script>
+
+    <script type="text/javascript">
+      function vidLoad()
+      {
+          document.getElementById('vid1').src = "https://youtube.com/embed/q8ZYuIGxuus?controls=0";
+          document.getElementById('vid2').src = "https://youtube.com/embed/sROKyFnYdFA?controls=0";
+          document.getElementById('vid3').src = "https://youtube.com/embed/31uWBY9z3Rc?controls=0";
+      }
+    </script>
 
   </body>
 </html>
